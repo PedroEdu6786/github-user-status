@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 function SearchBar(props) {
     const { searchUser } = props;
@@ -20,5 +21,7 @@ function SearchBar(props) {
         </form>
     );
 }
+
+SearchBar.propTypes = {};
 
 export default SearchBar;
