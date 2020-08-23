@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function UserCard(props) {
     const { id, login, name, html_url, bio, avatar_url } = props.user;
@@ -12,5 +13,9 @@ function UserCard(props) {
         </div>
     );
 }
+
+UserCard.propTypes = {
+    user: PropTypes.object,
+};
 
 export default UserCard;

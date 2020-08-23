@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Repository(props) {
     const { name, description, html_url, language } = props.repo;
@@ -11,5 +12,9 @@ function Repository(props) {
         </div>
     );
 }
+
+Repository.propTypes = {
+    repo: PropTypes.object,
+};
 
 export default Repository;
