@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header.js";
 import SearchBar from "./components/SearchBar.js";
 import UserCard from "./components/UserCard.js";
+import Stats from "./components/Stats.js";
 import UserRepos from "./components/UserRepos.js";
 
 function App() {
@@ -32,18 +33,20 @@ function App() {
             .catch((err) => {
                 setErrorMessage(err);
                 setLoading(false);
+                console.log(err, error, loading);
                 throw new Error(err);
             });
     };
 
     // Loads components containing user's github information
     const displayUserInfo = () => {
-        if (loading && error) {
+        if (loading) {
             return <div>Look Up a User</div>;
         } else {
             return (
                 <div>
                     <UserCard user={user} />
+                    <Stats username={user.login} />
                     <UserRepos repos={repos} />
                 </div>
             );
