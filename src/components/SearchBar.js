@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import "../styles/app.css";
 
 function SearchBar(props) {
     const { searchUser } = props;
@@ -16,8 +17,8 @@ function SearchBar(props) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" onChange={handleChange} />
-            <button>Submit</button>
+            <input className="user-input" type="text" onChange={handleChange} />
+            <button className="btn-user">Submit</button>
         </form>
     );
 }

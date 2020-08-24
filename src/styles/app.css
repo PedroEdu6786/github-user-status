@@ -1,6 +1,7 @@
 .search-bar-container {
-    padding: 1.5em 0em;
+    padding: 1.5em 2em;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .user-content-container {
@@ -22,6 +23,27 @@
     color: white;
 }
 
+/* SearchBar */
+
+form .user-input {
+    width: 80%;
+    height: 25px;
+    border: none;
+    background: #dcdcdc;
+}
+
+form .btn-user {
+    padding: 0.5em;
+    height: 25px;
+    border: none;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    background-color: #f2f4f8;
+    outline: none;
+}
+
 /* Stats */
 .gb-stats {
     width: 100%;
@@ -38,14 +60,44 @@
 /* UserCard */
 .user-info-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 .user-info {
-    padding: 1em 0;
+    padding: 1em;
 }
 
 .user-avatar-img {
     align-items: center;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.user-info-container .user-info h3 {
+    top: 0;
+    font-size: 22px;
+    padding-bottom: 0.25em;
+}
+
+.user-info-container .user-info .user-bio {
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.user-info-container .user-info .user-url {
+    padding-top: 0.25em;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* UserRepos */
+.repos-container {
+    margin: 0 -1em;
+}
+
+.btn-carousel {
+    padding: 0.25em;
+    border: none;
+    border-radius: 50%;
 }

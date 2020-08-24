@@ -17,6 +17,7 @@ To search a new github account status just input again a new username into the a
 -   React
 -   Github API
 -   Github-readme-stats
+-   react-items-carousel
 
 ## Setup
 
