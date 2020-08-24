@@ -16,6 +16,13 @@ To search a new github account status just input again a new username into the a
 -   Node.js
 -   React
 -   Github API
+-   Github-readme-stats
+
+## Setup
+
+First you need to have installed node.js
+Then run with npm "npm install" to have installed all dependencies needed to run the project locally
+Now you should be ready to go.
 
 ## Components
 
