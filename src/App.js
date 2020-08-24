@@ -4,6 +4,7 @@ import SearchBar from "./components/SearchBar.js";
 import UserCard from "./components/UserCard.js";
 import Stats from "./components/Stats.js";
 import UserRepos from "./components/UserRepos.js";
+import "./styles/app.css";
 
 function App() {
     const [user, setUser] = useState({});
@@ -66,8 +67,10 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <SearchBar searchUser={searchUser} />
-            {displayUserInfo()}
+            <div className="search-bar-container">
+                <SearchBar searchUser={searchUser} />
+            </div>
+            <div className="user-content-container">{displayUserInfo()}</div>
         </div>
     );
 }

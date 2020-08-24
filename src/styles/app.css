@@ -1,0 +1,51 @@
+.search-bar-container {
+    padding: 1.5em 0em;
+    text-align: center;
+}
+
+.user-content-container {
+    padding: 0 3em 2em 3em;
+}
+
+.user-avatar-img {
+    width: 250px;
+}
+
+/* Header */
+.header-container {
+    padding: 1em 0;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+.header-container h1 {
+    color: white;
+}
+
+/* Stats */
+.gb-stats {
+    width: 100%;
+}
+
+.gb-languages {
+    width: 100%;
+}
+
+.stats-container {
+    padding: 1em 0;
+}
+
+/* UserCard */
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-info {
+    padding: 1em 0;
+}
+
+.user-avatar-img {
+    align-items: center;
+}

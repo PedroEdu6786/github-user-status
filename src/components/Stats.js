@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../styles/app.css";
 
 const Stats = (props) => {
     const username = props.username;
@@ -8,8 +9,8 @@ const Stats = (props) => {
 
     return (
         <div className="stats-container">
-            <img src={grade} alt="stats" />
-            <img src={languages} alt="language" />
+            <img className="gb-stats" src={grade} alt="stats" />
+            <img className="gb-languages" src={languages} alt="language" />
         </div>
     );
 };
