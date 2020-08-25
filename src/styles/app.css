@@ -1,0 +1,193 @@
+.search-bar-container {
+    padding: 1.5em 2em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.user-content-container {
+    padding: 0 3em 2em 3em;
+    text-align: center;
+}
+
+.user-avatar-img {
+    width: 25em;
+}
+
+.app-state {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* Header */
+.header-container {
+    padding: 1em 0;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+.header-container h1 {
+    color: white;
+}
+
+/* SearchBar */
+
+form .user-input {
+    width: 60%;
+    height: 2.5em;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+form .btn-user {
+    padding: 0.5em;
+    height: 2.5em;
+    background: #ccc;
+    border: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+form .user-input:focus {
+    border: 3px solid #555;
+}
+
+form .btn-user:focus {
+    cursor: pointer;
+    border: 3px solid #555;
+}
+
+/* Stats */
+.gb-stats {
+    padding: 0.5em;
+    width: 25em;
+    max-width: 650px;
+}
+
+.gb-languages {
+    padding: 0.5em;
+    width: 25em;
+    max-width: 650px;
+}
+
+.stats-container {
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* UserCard */
+.user-info-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.user-info {
+    padding: 1em;
+}
+
+.user-avatar-img {
+    align-items: center;
+    width: 10em;
+    border-radius: 50%;
+}
+
+.user-info-container .user-info h3 {
+    top: 0;
+    font-size: 1.5em;
+    padding-bottom: 0.25em;
+}
+
+.user-info-container .user-info .user-bio {
+    font-size: 0.9em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.user-info-container .user-info .user-url {
+    padding-top: 0.25em;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+/* UserRepos */
+
+.repos-container h2 {
+    padding: 0.5em 0;
+}
+
+.btn-carousel {
+    padding: 0.5em;
+    border: none;
+    border-radius: 50%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.btn-carousel:hover {
+    cursor: pointer;
+}
+
+/* Repository */
+.user-repo {
+    background: #f2f4f8;
+    border-radius: 10px;
+    padding: 1em;
+    width: 100%;
+    margin: 0 1em;
+    text-align: left;
+}
+
+.user-repo .repo-des {
+    font-size: 0.9em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.user-repo .repo-lang {
+    padding-top: 0.25em;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+.user-repo .repo-lang:before {
+    content: " \25CF";
+    font-size: 1.5em;
+    color: blue;
+}
+
+.user-repo .repo-url {
+    padding-top: 0.25em;
+    font-size: 0.65em;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 700px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        font-size: 30px;
+    }
+
+    .stats-container {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .gb-stats {
+        height: 14em;
+    }
+
+    .gb-languages {
+        height: 14em;
+    }
+}
