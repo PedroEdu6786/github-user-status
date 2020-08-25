@@ -43,13 +43,13 @@ function App() {
 
     // Loads components containing user's github information
     const displayUserInfo = () => {
-        let jsx = <div>Look Up a User</div>;
+        let jsx = <div className="app-state">Look Up a User</div>;
 
         if (loading !== null) {
             if (loading) {
-                jsx = <div>Loading...</div>;
+                jsx = <div className="app-state">Loading...</div>;
             } else if (error) {
-                jsx = <div>There's been an error</div>;
+                jsx = <div className="app-state">There's been an error</div>;
             } else {
                 jsx = (
                     <div>

@@ -5,7 +5,7 @@ import "../styles/app.css";
 const Stats = (props) => {
     const username = props.username;
     const grade = `https://github-readme-stats.vercel.app/api?username=${username}&count_private=true&show_icons=true`;
-    const languages = `https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact`;
+    const languages = `https://github-readme-stats.vercel.app/api/top-langs/?username=${username}`;
 
     return (
         <div className="stats-container">
