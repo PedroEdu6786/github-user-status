@@ -32,7 +32,3 @@ Now you should be ready to go.
 -   **Stats.** Card containing user's stats: Total stars, total commits, total PR's, total issues, total contributions and overall grade. Top languages card user stats.
 -   **UserRepos.** Carousel of cards showing basic information of the user's repos (name, url, description, languages, contributors, creation date, last update)
 -   **Repository.** Card containing information of a single repository from an array of repositories
-
-## Project Status
-
-On development
